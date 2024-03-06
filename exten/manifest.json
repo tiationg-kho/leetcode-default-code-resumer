@@ -4,7 +4,7 @@
 	"version": "1.0",
 	"permissions": ["activeTab", "scripting"],
 	"host_permissions": ["https://leetcode.com/*"],
-	"description": "resume default code in leetcode problem page. notice that this extension do not support dynamic layout.",
+	"description": "resume default code in leetcode problem page.",
 	"background": {
 		"service_worker": "background.js"
 	},
@@ -14,7 +14,7 @@
 				"default": "Ctrl+B",
 				"mac": "Command+B"
 			},
-			"description": "resume default code in leetcode problem page. notice that this extension do not support dynamic layout."
+			"description": "resume default code in leetcode problem page."
 		}
 	}
 }

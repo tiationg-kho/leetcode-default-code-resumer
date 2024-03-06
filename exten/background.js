@@ -22,10 +22,11 @@ chrome.commands.onCommand.addListener((command) => {
 
 const clickFirstButton = () => {
 	const firstButtons = document.querySelectorAll(
-		'.rounded.px-3.py-1\\.5.font-medium.items-center.whitespace-nowrap.focus\\:outline-none.inline-flex.group.ml-auto.\\!p-1'
+		'button[data-state="closed"].relative.inline-flex.gap-2.items-center.justify-center.font-medium.cursor-pointer.focus-visible\\:outline-none.disabled\\:cursor-not-allowed.disabled\\:opacity-50.transition-colors.bg-transparent.enabled\\:hover\\:bg-fill-secondary.enabled\\:active\\:bg-fill-primary.text-caption.rounded.text-text-primary.group.ml-auto.p-1'
 	);
-	if (firstButtons.length > 2) {
-		firstButtons[2].click();
+
+	if (firstButtons.length > 3) {
+		firstButtons[3].click();
 	}
 };
 

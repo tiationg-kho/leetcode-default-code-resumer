@@ -25,8 +25,10 @@ const clickFirstButton = () => {
 		'button[data-state="closed"].relative.inline-flex.gap-2.items-center.justify-center.font-medium.cursor-pointer.focus-visible\\:outline-none.disabled\\:cursor-not-allowed.disabled\\:opacity-50.transition-colors.bg-transparent.enabled\\:hover\\:bg-fill-secondary.enabled\\:active\\:bg-fill-primary.text-caption.rounded.text-text-primary.group.ml-auto.p-1'
 	);
 
-	if (firstButtons.length > 3) {
+	if (firstButtons.length === 4) {
 		firstButtons[3].click();
+	} else if (firstButtons.length === 3) {
+		firstButtons[2].click();
 	}
 };
 
